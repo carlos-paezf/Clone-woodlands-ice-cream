@@ -1,5 +1,48 @@
-/* Small Screen */
-@media all and (max-width: 975px) {
+/* Medium-Small Screen */
+@media all and (max-width: 975px ) {
+    header {
+        /* border: 1px solid brown; */
+        display: flex;
+        background-color: #FFF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 20px;
+        height: 175px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .nav-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-toggle, .mob-x {
+        position: absolute;
+        top: 20px;
+        right: 5%;
+        width: 35px;
+        height: 72px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* cursor: pointer; */
+    }
+
+    .menu-toggle {
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/menu-toggle.svg);
+    }
+
+    .mob-x {
+        background-image: url(	https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/mobile-x.svg);
+    }
+
     ul {
         list-style: none;
         padding: 0;
@@ -12,7 +55,7 @@
         top: 0;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 100vh;
         align-items: center;
         align-content: center;
         background-image: url(https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/wooden_panels.jpg);
@@ -20,9 +63,10 @@
         background-size: cover;
         z-index: 100;
         justify-content: space-around;
-        transition: ease 0.3s;    
+        transition: ease .3s;    
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
+        transform: translateY(300%);
     }
 
     .open {
@@ -32,15 +76,9 @@
         align-content: center;
     }
 
-    .mob-x {
-        width: 32px;
-        height: 32px;
-        position: absolute;
-        top: 30px;
-        right: 35px;
-        background-image: url(	https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/mobile-x.svg);
-        background-size: contain;
-        background-position: center;
+    .open.active {
+        transition: ease .3s;    
+        transform: translateY(0%);
     }
 
     .menu-mobile .div {
@@ -63,7 +101,7 @@
     .nav li {
         /* border: 1px solid mediumspringgreen; */
         display: flex;
-        width: 100vh;
+        width: 40vh;
         align-items: center;
         justify-content: center;
         padding: 0 10px 10px;
@@ -142,30 +180,14 @@
         transform: translateX(-76.8%) translateY(-23.5%) scale(1);
     }
 
-    /* .social-media li a:hover:before 
-    .social-media li a:hover:after  {
-        transition-property: opacity; 
-        transition-duration: .2s;
-        opacity: 100%;
-        transition: opacity 2s;
-        animation: fadeIn 2s;
-    } */
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
     nav img {
         /* border: 1px solid sienna; */
         width: 100px;
     }
+
+    
 }
 
-/* body {
+body {
     background-image: url(https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/wooden_panels.jpg);
-} */
+}

@@ -1,0 +1,169 @@
+/* Small Screen */
+@media all and (max-width: 975px) {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu-mobile nav {
+        /* border: 3px solid black; */
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/wooden_panels.jpg);
+        background-position: center;
+        background-size: cover;
+        z-index: 100;
+        justify-content: space-around;
+        transition: ease 0.3s;    
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+
+    .open {
+        /* border: 1px solid peru; */
+        width: 100%;
+        height: 100%;
+        align-content: center;
+    }
+
+    .mob-x {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        background-image: url(	https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/mobile-x.svg);
+        background-size: contain;
+        background-position: center;
+    }
+
+    .menu-mobile .div {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+    }
+    
+    .nav {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        font-family: 'Barlow Condensed', sans-serif;
+        width: 100%;
+        margin-top: 10%;
+    }
+    
+    .nav li {
+        /* border: 1px solid mediumspringgreen; */
+        display: flex;
+        /* width: 100%; */
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px 10px;
+    }
+    
+    .link-menu-mobile a {
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 500;
+        color: #343a40;
+        transition: color .3s;
+        margin: 1vh;
+    }
+
+    .link-menu-mobile a:hover {
+        color: #E68CB9;
+    }
+
+    .social-media {
+        /* border: 1px solid violet; */
+        display: flex;
+        margin: 0 0 30px;
+    }
+
+    .social-media a {
+        /* border: 1px solid red; */
+        position: relative;
+        color: #1F2326;
+        margin-inline: 7px;
+    }
+
+    .social-media i {
+        border: 1px solid #1F2326;
+        font-size: 20px;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .social-media li a::before, 
+    .social-media li a::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        opacity: 0%;
+    }
+
+    .social-media li a::before {
+        transition: all 0.35s;
+        border: 4px solid #E68CB9;
+        transform: translateX(-25%) translateY(-24%) scale(0.7);
+    }
+
+    .social-media li a::after {
+        transition: all 0.5s;
+        border: 2px solid #E68CB9;
+        transform: translateX(-76.8%) translateY(-23.5%) scale(0.5);
+    }
+
+    .social-media li a:hover:before {
+        transform: translateX(-25%) translateY(-24%) scale(1.15);
+    }
+
+    .social-media li a:hover:after {
+        transform: translateX(-76.8%) translateY(-23.5%) scale(1);
+    }
+
+    .social-media li a:hover:before 
+    .social-media li a:hover:after  {
+        /* transition-property: opacity; */
+        /* transition-duration: .2s; */
+        /* opacity: 100%;
+        transition: opacity 2s; */
+        animation: fadeIn 2s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    nav img {
+        /* border: 1px solid sienna; */
+        width: 100px;
+    }
+}
+
+/* body {
+    background-image: url(https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/wooden_panels.jpg);
+} */

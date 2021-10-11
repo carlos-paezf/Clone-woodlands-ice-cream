@@ -15,14 +15,10 @@ const toggleNav = function() {
 const shrinkNavbar = () => {
     const header = document.getElementById('header')
     const logo = document.getElementById('logo')
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         header.classList.add('shrink')
-        logo.classList.add('small')
-        logo.classList.remove('normal')
     } else {
         header.classList.remove('shrink')
-        logo.classList.remove('small')
-        logo.classList.add('normal')
     }
 }
 

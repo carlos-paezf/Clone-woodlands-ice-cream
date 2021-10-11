@@ -1,82 +1,173 @@
-/* Medium-Small Screen */
+/**********     Elementos comunes     **********/
+body {
+    background-image: url(https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/wooden_panels.jpg);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+header {
+    display: block;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: height 0.2s;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.shrink {
+    height: 50px;
+    transition: ease .3s;    
+}
+
+.link-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-stretch: expanded;
+    color: #0d0d0e;
+    transition: color .25s;
+}
+
+.link-menu a:hover {
+    color: #E68CB9;
+}
+
+.social-media a {
+    color: #1F2326;
+}
+
+.social-media i, 
+.shrink .social-media i {
+    border: 1px solid #1F2326;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social-media li a::before, 
+.social-media li a::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.social-media li a::before,
+.shrink .social-media li a::before {
+    transition: all 0.35s;
+}
+
+.social-media li a::after,
+.shrink .social-media li a::after  {
+    transition: all 0.5s;
+}
+
+.social-media li a:hover:before,
+.social-media li a:hover:after,
+.shrink .social-media li a:hover:before,
+.shrink .social-media li a:hover:after {
+    opacity: 1;
+}
+
+
+
+/**********    Medium-Small Screen    **********/
 @media all and (max-width: 975px ) {
-    header {
-        /* border: 1px solid brown; */
+
+    /*********   Generalidades   *********/
+    .nav,
+    .nav li,
+    .nav-logo, 
+    .nav-logo div, 
+    .shrink .nav-logo div,
+    .menu-mobile nav, 
+    .menu-mobile .div,
+    .social-media {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .nav,
+    .menu-mobile nav,
+    .menu-mobile .div {
+        flex-direction: column;
+    }
+
+    .nav-logo div,
+    .shrink .nav-logo div,
+    .menu-toggle, 
+    .mob-x  {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .nav-logo div,
+    .shrink .nav-logo div {
         background-color: #FFF;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
+        transform: translateX(-5%);
+    }
+
+    .nav,
+    .open,
+    .container,
+    .link-menu-mobile a {
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
         padding-top: 20px;
         height: 160px;
     }
-
-    .shrink {
-        /* border: 1px solid purple; */
-        height: 50px;
-        transition: ease .3s;    
-    }
-
-    .shrink .menu-toggle {
-        top: 5px;
-        right: 5%;
-        width: 20px;
-        height: 60px;
-        transition: ease .3s;    
-    }
-
-    .container {
-        width: 100%;
+    
+    .container {        
         padding: 0 15px;
         margin: 0 auto;
-    }
-
-    .nav-logo {
-        display: flex;
-        justify-content: center;
-    }
-
-    .normal a {
-        /* border: 1px solid blue; */
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: center;
+        height: 100%;
+    }
+
+    /*********   Logo   *********/
+
+    .nav-logo div {
+        width: 225px;
+        height: 150px;
         background-image: url(../assets/img/logo/logo.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: ease-out .3s;    
+        background-size: 60%;
+        transition: all .3s;    
     }
     
-    .small a {
-        /* border: 1px solid blue; */
-        position: absolute;
-        top: 0;
+    .shrink .nav-logo div {
         width: 70px;
         height: 80px;
-        background-color: #FFF;
         border-radius: 40px;
         padding: 10px 20px 0;
         background-image: url(../assets/img/logo/mini-logo.png);
-        background-repeat: no-repeat;
-        background-position: center;
         transition: ease .3s;    
+        background-size: 70%;    
     }
 
-    .menu-toggle, .mob-x {
+    /*********   Toggle   *********/
+
+    .menu-toggle, 
+    .mob-x {
         position: absolute;
         top: 20px;
         right: 5%;
         width: 35px;
         height: 72px;
         background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        /* cursor: pointer; */
     }
 
     .menu-toggle {
@@ -86,22 +177,22 @@
     .mob-x {
         background-image: url(	https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/mobile-x.svg);
     }
-
-    ul {
-        list-style: none;
-        padding: 0;
+    
+    .shrink .menu-toggle {
+        top: 5px;
+        right: 5%;
+        width: 20px;
+        height: 60px;
+        transition: ease .3s;    
     }
 
+    /*********   Lista de menú para moviles   *********/
+
     .menu-mobile nav {
-        /* border: 3px solid black; */
         position: fixed;
         left: 0;
         top: 0;
-        display: flex;
-        flex-direction: column;
         height: 100vh;
-        align-items: center;
-        align-content: center;
         background-image: url(https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/wooden_panels.jpg);
         background-position: center;
         background-size: cover;
@@ -114,9 +205,6 @@
     }
 
     .open {
-        /* border: 1px solid peru; */
-        width: 100%;
-        height: 100%;
         align-content: center;
     }
 
@@ -126,112 +214,263 @@
     }
 
     .menu-mobile .div {
-        /* border: 1px solid red; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         left: 0;
     }
     
-    .nav {
-        /* border: 1px solid red; */
-        display: flex;
-        flex-direction: column;
-        font-family: 'Barlow Condensed', sans-serif;
-        width: 100%;
-        /* margin-top: 10%; */
-    }
-    
     .nav li {
-        /* border: 1px solid mediumspringgreen; */
-        display: flex;
         width: 40vh;
-        align-items: center;
-        justify-content: center;
         padding: 0 10px 10px;
     }
     
-    .link-menu-mobile a {
-        /* border: 1px solid blue; */
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-        text-transform: uppercase;
+    .link-menu {
         font-size: 30px;
-        text-align: center;
-        font-weight: 500;
-        color: #343a40;
-        transition: color .3s;
         margin: 1%;
     }
 
-    .link-menu-mobile a:hover {
-        color: #E68CB9;
-    }
+    /*********   Social Media   *********/
 
     .social-media {
-        /* border: 1px solid violet; */
-        display: flex;
         margin: 0 0 30px;
     }
 
     .social-media a {
-        /* border: 1px solid red; */
         position: relative;
-        color: #1F2326;
         margin-inline: 7px;
     }
 
     .social-media i {
-        border: 1px solid #1F2326;
         font-size: 20px;
-        padding: 10px;
         width: 20px;
         height: 20px;
-        border-radius: 50%;
-        text-align: center;
     }
 
     .social-media li a::before, 
     .social-media li a::after {
-        content: '';
-        position: absolute;
-        border-radius: 50%;
         width: 75px;
         height: 75px;
-        opacity: 0;
     }
 
     .social-media li a::before {
-        transition: all 0.35s;
         border: 4px solid #E68CB9;
         transform: translateX(-25%) translateY(-24%) scale(0.7);
     }
 
     .social-media li a::after {
-        transition: all 0.5s;
         border: 2px solid #E68CB9;
         transform: translateX(-76.8%) translateY(-23.5%) scale(0.5);
     }
 
     .social-media li a:hover:before {
-        opacity: 1;
         transform: translateX(-25%) translateY(-24%) scale(1.15);
     }
 
     .social-media li a:hover:after {
-        opacity: 1;
         transform: translateX(-76.8%) translateY(-23.5%) scale(1);
     }
 
-    nav img {
-        /* border: 1px solid sienna; */
+    .open .image {
         width: 100px;
     }
-
-    
 }
 
-body {
-    background-image: url(https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/wooden_panels.jpg);
+
+
+/**********    PC Screen    **********/
+@media all and (min-width: 975px) {
+
+    /*********   Generalidades   *********/
+    header, 
+    ul, 
+    nav, 
+    .container, 
+    .row, 
+    .menu, 
+    .nav {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    header, 
+    .container, 
+    .row, 
+    .menu, 
+    .nav, 
+    .link-menu a {
+        width: 100%;
+    }
+    
+    nav, 
+    .menu, 
+    .nav, 
+    .nav-logo, 
+    .link-menu, 
+    .social-media  {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav, 
+    .container, 
+    .row, 
+    .menu, 
+    .nav, 
+    .nav-logo, 
+    .link-menu {
+        height: 100%;
+    }
+    
+    /*********   Header   *********/
+    
+    header {
+        height: 175px;
+    }
+    
+    /*********   Navegación   *********/
+    
+    header nav {
+        width: 90%;
+        margin: 20px;
+    }
+    
+    .shrink nav {
+        width: 70%;
+    }
+    
+    .nav {
+        align-items: flex-end;
+        align-content: center;
+    }
+    
+    .nav li {
+        padding: 15px 35px;
+    }
+    
+    .shrink .nav li {
+        padding-inline: 20px;
+    }
+    
+    .nav-logo {
+        justify-content: center;
+    }
+    
+    .link-menu {
+        align-items: flex-end;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    
+    .shrink .link-menu a {
+        padding-bottom: 0px;
+    }
+    
+    .shrink .link-menu .nav-logo div, 
+    .nav-logo div {
+        background-color: #FFF;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .shrink .link-menu .nav-logo div {
+        align-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+        height: 100px;
+        width: 90px;
+        background-image: url(../assets/img/logo/mini-logo.png);
+        background-size: 60%;
+        transform: translateY(-10%);
+        padding: 10px;
+        border-radius: 40px;
+        transition: cubic-bezier(0.4, 0, 1, 1) .05s;
+    }
+    
+    .nav-logo div {
+        width: 150px;
+        height: 95%;
+        background-image: url(../assets/img/logo/logo.png);
+        background-size: 90%;
+        transform: translateY(15%);
+        transition: ease .05s;
+    }
+    
+    /*********   Estilos Social Media   *********/
+    
+    .social-media, 
+    .shrink .social-media {
+        position: absolute;
+        margin: 0 0 30px;
+        transition: all .3s;
+    }
+    
+    .social-media {
+        right: 90px;
+        top: 30px;
+    }
+    
+    .social-media a {
+        margin-inline: 8px;
+    }
+    
+    .social-media i {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+    }
+    
+    .social-media li a::before, 
+    .social-media li a::after {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .social-media li a::before {
+        border: 3px solid #E68CB9;
+        transform: translateX(-14.5%) translateY(-14.5%) scale(0.7);
+    }
+    
+    .social-media li a::after {
+        border: 2px solid #E68CB9;
+        transform: translateX(-87.5%) translateY(-13%) scale(0.2);
+    }
+    
+    .social-media li a:hover:before {
+        opacity: 1;
+        transform: translateX(-14.5%) translateY(-15%) scale(1.25);
+    }
+    
+    .social-media li a:hover:after {
+        opacity: 1;
+        transform: translateX(-87%) translateY(-12.5%) scale(1);
+    }
+    
+    .shrink .social-media {
+        right: 80px;
+        top: 5px;
+    }
+    
+    .shrink .social-media i {
+        font-size: 17px;
+        width: 15px;
+        height: 15px;
+    }
+    
+    .shrink .social-media li a::before {
+        border: 3px solid #E68CB9;
+        transform: translateX(-17%) translateY(-16.5%) scale(0.8);
+    }
+    
+    .shrink .social-media li a::after {
+        border: 2px solid #E68CB9;
+        transform: translateX(-85%) translateY(-15%) scale(0.2);
+    }
+    
+    .shrink .social-media li a:hover:before {
+        transform: translateX(-16.5%) translateY(-15%) scale(1.25);
+    }
+    
+    .shrink .social-media li a:hover:after {
+        transform: translateX(-85%) translateY(-14.5%) scale(0.99);
+    }
 }

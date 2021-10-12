@@ -476,6 +476,7 @@ header {
 }
 
 
+/******     Flavours     ******/
 .flavour-body
 {
     margin-top: 150px;
@@ -522,3 +523,67 @@ header {
 }
 
 
+
+/*******     Story     *******/
+
+.parallax {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.intro {
+    position: relative;
+    border: 1px solid red;
+    margin-top: 200px;
+    width: 100%;
+    height: 700px;
+}
+
+.content {
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 5%;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.parallax {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Video-image@2x.jpg);
+}
+
+.title {
+    width: 45%;
+    position: absolute;
+    top: 10%;
+    font-family: 'Merriweather', serif;
+    font-size: 68px;
+    font-weight: 600;
+    line-height: 65px;
+    color: #FFF;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: right;
+    /* transform: translateY(-200%); */
+}
+
+.statement {
+    position: absolute;
+    width: 40%;
+    top: 55%;
+    color: #FFF;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.18px;
+    margin-bottom: 30px;
+}

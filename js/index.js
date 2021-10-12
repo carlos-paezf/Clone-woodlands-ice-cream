@@ -27,11 +27,11 @@ window.onscroll = () => shrinkNavbar()
 
 
 const responsive = () => {
-    let width = screen.width
+    let width = window.innerWidth
     const menu = document.getElementById('menu')
     const menuMobile = document.getElementById('menu-mobile')
     menuMobile.hidden = true
-    if (width <= 975) 
+    if (width <= 1024) 
     {
         menu.hidden = true
         menuMobile.hidden = false
@@ -40,3 +40,4 @@ const responsive = () => {
         menu.hidden = false
     }
 }
+

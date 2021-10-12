@@ -1,6 +1,6 @@
 let toggleStatus = false
-const toggleNav = function() {
-    const getMenu = document.getElementById('menu-mobile')
+const toggleNav = function () {
+    const getMenu = document.getElementById('open-menu')
 
     if (toggleStatus === false) {
         getMenu.classList.add('active')
@@ -23,3 +23,20 @@ const shrinkNavbar = () => {
 }
 
 window.onscroll = () => shrinkNavbar()
+
+
+
+const responsive = () => {
+    let width = screen.width
+    const menu = document.getElementById('menu')
+    const menuMobile = document.getElementById('menu-mobile')
+    menuMobile.hidden = true
+    if (width <= 975) 
+    {
+        menu.hidden = true
+        menuMobile.hidden = false
+    } else {
+        menuMobile.hidden = true
+        menu.hidden = false
+    }
+}

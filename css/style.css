@@ -474,3 +474,14 @@ header {
         transform: translateX(-85%) translateY(-14.5%) scale(0.99);
     }
 }
+
+.main-flaviours
+{
+    height: 1000px;
+    width: auto;
+    background-image: url('https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/Flavours-mob@2x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+}

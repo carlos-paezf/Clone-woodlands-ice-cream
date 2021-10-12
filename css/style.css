@@ -476,6 +476,53 @@ header {
 }
 
 
+/******     Flavours     ******/
+.flavour-body
+{
+    margin-top: 150px;
+}
+
+.main-flavours
+{
+    height: 920px;
+    width: auto;
+    background-image: url('https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/Flavours-mob@2x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    filter: blur(0px);
+}
+
+.main-flavours-text-container
+{
+    color: white;
+    position: absolute;
+    right: 300px;
+    bottom: 100px;
+}
+
+.main-flavour-title
+{
+    font-size: 68px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: right;
+    font-family: "Jubilat";
+}
+
+.main-flavours-text{
+        
+    text-align: right;
+        color: #FFF;
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 0.18px;
+        margin-bottom: 30px;
+}
+
+
 
 /*******     Story     *******/
 
@@ -540,4 +587,3 @@ header {
     letter-spacing: 0.18px;
     margin-bottom: 30px;
 }
-

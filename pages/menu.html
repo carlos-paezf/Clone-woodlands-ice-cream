@@ -18,14 +18,13 @@
     <title>Menú</title>
 </head>
 
-<body>
+<body onresize="responsive()" onload="responsive()">
 
     <header id="header">
         <div class="container">
             <div class="row">
                 <!-- PC Screen -->
-                <!---->
-                <div class="menu" id="menu">
+                <div class="menu" id="menu" hidden>
                     <nav>
                         <ul class="nav">
                             <li class="link-menu">
@@ -77,12 +76,9 @@
                             </li>
                         </ul>
                 </div>
-                -->
-
 
                 <!-- Small-Medium Screen -->
-                <!---->
-                <div class="menu-mobile">
+                <div class="menu-mobile" id="menu-mobile" hidden>
                     <div class="nav-logo" id="logo">
                         <a href="../index.html">
                             <div></div>
@@ -91,7 +87,7 @@
 
                     <div class="menu-toggle" id="toggle" onclick="toggleNav()"></div>
 
-                    <nav class="open" id="menu-mobile">
+                    <nav class="open" id="open-menu">
                         <div class="mob-x" onclick="toggleNav()"></div>
 
                         <div class="div">
@@ -143,7 +139,6 @@
                         </div>
                     </nav>
                 </div>
-                -->
             </div>
         </div>
     </header>

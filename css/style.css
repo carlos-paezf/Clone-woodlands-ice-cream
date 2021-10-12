@@ -81,7 +81,7 @@ header {
 
 
 /**********    Medium-Small Screen    **********/
-@media all and (max-width: 975px ) {
+@media all and (max-width: 1024px ) {
 
     /*********   Generalidades   *********/
     .nav,
@@ -276,7 +276,7 @@ header {
 
 
 /**********    PC Screen    **********/
-@media all and (min-width: 975px) {
+@media all and (min-width: 1024px) {
 
     /*********   Generalidades   *********/
     header, 

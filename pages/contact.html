@@ -1,12 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="../assets/fontawesome-free-5.15.4-web/css/all.css">
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <title>Contact</title>
 </head>
-<body>
-    
+
+<body onresize="responsive()" onload="responsive()">
+
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <!-- PC Screen -->
+                <div class="menu" id="menu" hidden>
+                    <nav>
+                        <ul class="nav">
+                            <li class="link-menu">
+                                <a href="../index.html">H o m e</a>
+                            </li>
+                            <li class="link-menu active">
+                                <a href="./story.html">S t o r y</a>
+                            </li>
+                            <li class="link-menu">
+                                <a href="./flavours.html">F l a v o u r s</a>
+                            </li>
+
+                            <li class="link-menu">
+                                <div class="nav-logo" id="logo">
+                                    <a href="../index.html">
+                                        <div></div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="link-menu">
+                                <a href="./blog.html">B l o g</a>
+                            </li>
+                            <li class="link-menu">
+                                <a href="./wholesale.html">W h o l e s a l e</a>
+                            </li>
+                            <li class="link-menu">
+                                <a href="./contact.html">C o n t a c t</a>
+                            </li>
+                        </ul>
+
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://www.instagram.com/woodlands_ice_cream/?hl=en" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/Woodlands-Ice-Cream-631261676975633/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/woodlands__?lang=en" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Small-Medium Screen -->
+                <div class="menu-mobile" id="menu-mobile" hidden>
+                    <div class="nav-logo" id="logo">
+                        <a href="../index.html">
+                            <div></div>
+                        </a>
+                    </div>
+
+                    <div class="menu-toggle" id="toggle" onclick="toggleNav()"></div>
+
+                    <nav class="open" id="open-menu">
+                        <div class="mob-x" onclick="toggleNav()"></div>
+
+                        <div class="div">
+                            <ul class="nav">
+                                <li class="link-menu">
+                                    <a href="../index.html">H o m e</a>
+                                </li>
+                                <li class="link-menu">
+                                    <a href="./story.html">S t o r y</a>
+                                </li>
+                                <li class="link-menu">
+                                    <a href="./flavours.html">F l a v o u r s</a>
+                                </li>
+                                <li class="link-menu">
+                                    <a href="./blog.html">B l o g</a>
+                                </li>
+                                <li class="link-menu">
+                                    <a href="./wholesale.html">W h o l e s a l e</a>
+                                </li>
+                                <li class="link-menu">
+                                    <a href="./contact.html">C o n t a c t</a>
+                                </li>
+                            </ul>
+
+                            <ul class="social-media">
+                                <li>
+                                    <a href="https://www.instagram.com/woodlands_ice_cream/?hl=en" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/Woodlands-Ice-Cream-631261676975633/"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/woodlands__?lang=en" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <img class="image"
+                                src="https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/250years-footer.svg"
+                                alt="">
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="../js/index.js"></script>
+
 </body>
+
 </html>

@@ -14,8 +14,7 @@ const toggleNav = function () {
 
 const shrinkNavbar = () => {
     const header = document.getElementById('header')
-    const logo = document.getElementById('logo')
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         header.classList.add('shrink')
     } else {
         header.classList.remove('shrink')
@@ -41,3 +40,18 @@ const responsive = () => {
     }
 }
 
+
+
+let parallax = document.querySelector('.parallax')
+let aside1 = document.querySelector('.aside-1')
+let aside2 = document.querySelector('.aside-2')
+
+const scroll = () => {
+    let scrollTop = document.documentElement.scrollTop
+    parallax.style.filter = `blur(${scrollTop * 0.02}px)`
+    parallax.style.transform = `translateY(${scrollTop * 0.05}%)`
+    aside1.style.transform = `translateY(${scrollTop * -0.03 + 80}%)`
+    aside2.style.transform = `translateY(${scrollTop * 0.03 - 50}%)`
+}
+
+window.addEventListener('scroll', scroll)

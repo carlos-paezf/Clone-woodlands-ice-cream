@@ -1,6 +1,7 @@
 /**********     Elementos comunes     **********/
 body {
     background-image: url(https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/wooden_panels.jpg);
+    background-size: 100%;
 }
 
 ul {
@@ -525,26 +526,107 @@ header {
 
 
 /*******     Story     *******/
+.wrapper-intro {
+    display: grid;
+}
 
-.parallax {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.wrapper-intro > * {
+    flex: 1 100%;
+}
+
+@media all and (max-width: 1024px) {
+    .wrapper-intro {
+        grid-template-columns: 1fr;
+        grid-template-areas: "aside-1" "content" "aside-2";
+    }
+
+    .aside {
+        flex: 1 0 0;
+    }
+}
+
+.aside-1 {
+    background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/China_plate@2x.png);
+    grid-area: "aside-1";
+}
+
+.content {
+    grid-area: "content";
+}
+
+.aside-2 {
+    background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/ice_cream_basket@2x-1.png);
+    grid-area: "aside-2";
+}
+
+@media all and (min-width: 1024px) {
+    .wrapper-intro {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "aside-1 content content aside-2";
+        margin-top: 5px;
+    }
+
+    .aside-1,
+    .aside-2 {
+        width: 400px;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+    }
+
+    .aside-1 {
+        transform: translateY(60%);
+    }
+    
+    .aside-2 {
+        transform: translateY(-40%);
+    }
+
+    .wrapper-intro .content {
+        width: 700px;
+        transform: translateX(-5%);
+    }
+
+    .wrapper-intro h2 {
+        font-size: 45px;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+    }
+
+    .wrapper-intro p {
+        color: #1F2326;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 35px;
+        margin-top: 0;
+    }
+
+    .arrow-down {
+        width: 100%;
+        height: 40px;
+        margin-top: 50px;
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/Shape.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 2.25%;
+    }
 }
 
 .intro {
     position: relative;
-    border: 1px solid red;
-    margin-top: 200px;
+    margin-top: 2.2%;
     width: 100%;
-    height: 700px;
+    height: 900px;
 }
 
 .content {
-    border: 1px solid blue;
     display: flex;
     flex-wrap: wrap;
     padding-inline: 5%;
+    justify-content: flex-end;
 }
 
 .justify-end {
@@ -555,35 +637,62 @@ header {
     justify-content: center;
 }
 
-.parallax {
+.static {
+    position: absolute;
+    top: 0;
     width: 100%;
-    height: 100%;
+    height: 97%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.parallax {
+    /* position: absolute;
+    top: 0;
+    bottom: 0; */
+    width: 100%;
+    height: 120%;
     background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Video-image@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /* filter: blur(10px); */
+}
+
+.parallax::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(90deg, rgba(75, 73, 73, 0) 0%, rgba(3, 23, 44, 0.747) 100%);
 }
 
 .title {
     width: 45%;
     position: absolute;
-    top: 10%;
+    top: 25%;
     font-family: 'Merriweather', serif;
     font-size: 68px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 65px;
     color: #FFF;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    /* margin-bottom: 200px; */
     text-align: right;
     /* transform: translateY(-200%); */
 }
 
 .statement {
     position: absolute;
-    width: 40%;
-    top: 55%;
+    width: 45%;
+    top: 57.5%;
     color: #FFF;
     text-align: right;
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 28px;
+    font-weight: 400;
     letter-spacing: 0.18px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    word-spacing: 2px;
 }

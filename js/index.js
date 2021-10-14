@@ -30,8 +30,7 @@ const responsive = () => {
     const menu = document.getElementById('menu')
     const menuMobile = document.getElementById('menu-mobile')
     menuMobile.hidden = true
-    if (width <= 1024) 
-    {
+    if (width <= 1024) {
         menu.hidden = true
         menuMobile.hidden = false
     } else {
@@ -45,6 +44,9 @@ const responsive = () => {
 let parallax = document.querySelector('.parallax')
 let aside1 = document.querySelector('.aside-1')
 let aside2 = document.querySelector('.aside-2')
+let image1 = document.getElementById('i1')
+let image2 = document.getElementById('i2')
+let image3 = document.getElementById('i3')
 
 const scroll = () => {
     let scrollTop = document.documentElement.scrollTop
@@ -52,6 +54,9 @@ const scroll = () => {
     parallax.style.transform = `translateY(${scrollTop * 0.05}%)`
     aside1.style.transform = `translateY(${scrollTop * -0.03 + 80}%)`
     aside2.style.transform = `translateY(${scrollTop * 0.03 - 50}%)`
+    image1.style.transform = `translateY(${scrollTop * -0.1 + 155}%)`
+    image2.style.transform = `translateY(${scrollTop * -0.1 + 200}%)`
+    image3.style.transform = `translateY(${scrollTop * -0.1 + 275}%)`
 }
 
 window.addEventListener('scroll', scroll)

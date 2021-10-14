@@ -351,6 +351,10 @@ header {
         padding-inline: 20px;
     }
     
+    .shrink .nav .link-menu:hover {
+        border-bottom: 3px solid #E68CB9;
+    }
+
     .nav-logo {
         justify-content: center;
     }
@@ -536,17 +540,6 @@ header {
     flex: 1 100%;
 }
 
-@media all and (max-width: 1024px) {
-    .wrapper-intro {
-        grid-template-columns: 1fr;
-        grid-template-areas: "aside-1" "content" "aside-2";
-    }
-
-    .aside {
-        flex: 1 0 0;
-    }
-}
-
 .aside-1 {
     background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/China_plate@2x.png);
     grid-area: "aside-1";
@@ -561,7 +554,327 @@ header {
     grid-area: "aside-2";
 }
 
+@media all and (max-width: 1024px) {
+    .intro {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .static {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .parallax {
+        width: 100%;
+        height: 115%;
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/Story-mob@2x.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .parallax::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background: linear-gradient(90deg, rgba(75, 73, 73, 0) 0%, rgba(3, 23, 44, 0.747) 100%);
+    }
+
+    .title {
+        width: 98%;
+        position: absolute;
+        top: 30%;
+        font-family: 'Merriweather', serif;
+        font-size: 45px;
+        font-weight: 900;
+        line-height: 45px;
+        color: #FFF;
+        letter-spacing: 2px;
+        text-align: right;
+    }
+    
+    .statement {
+        position: absolute;
+        width: 97%;
+        top: 55%;
+        color: #FFF;
+        text-align: right;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.18px;
+        margin-top: 50px;
+        word-spacing: 2px;
+    }
+
+    .wrapper-intro {
+        grid-template-columns: 1fr;
+        grid-template-areas: "aside-1" "content" "aside-2";
+    }
+
+    .aside-1,
+    .aside-2 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+    }
+
+    .aside-1 {
+        bottom: -80%;
+    }
+    
+    .aside-2 {
+        right: 0;
+    }
+
+    .wrapper-intro .content {
+        width: 100%;
+        transform: translateX(-5%);
+    }
+
+    .wrapper-intro h2 {
+        font-size: 35px;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    .wrapper-intro p {
+        color: #1F2326;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 35px;
+        margin-left: 40px;
+    }
+
+    .arrow-down {
+        width: 100%;
+        height: 40px;
+        margin-top: 50px;
+        margin-left: 35px;
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/Shape.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 2.25%;
+    }
+
+    .separation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -9%;
+    }
+
+    .separation h4 {
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 28px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    .separation .line {
+        height: 80px;
+        width: 3px;
+        background-color:black;
+    }
+
+    .wrapper-story {
+        font-family: 'Scheherazade New', serif;
+    }
+    
+    .wrapper-story .row {
+        /* display: flex; */
+        margin-bottom: 50px;
+    }
+
+    .col-1 .image,
+    .col-2 .image {
+        width: 100%;
+        align-content: center;
+    }
+
+    .col-1 .image img,
+    .col-2 .image img {
+        width: 100%;
+    }
+
+    .col-2 .image {
+        transform: translateY(60%);
+    }
+
+    .col-1 .image3 {
+        transform: translateY(100%);
+    }
+
+    .row h1 {
+        font-size: 50px;
+        font-weight: bolder;
+        line-height: 50px;
+        letter-spacing: -1px;
+        font-stretch: extra-expanded;
+    }
+
+    .row p {
+        font-weight: 100;
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .row .col-2 h1,
+    .row .col-2 p,
+    .row .col-1 h1,
+    .row .col-1 p {
+        padding: 0 35px;
+    }
+
+    .wrapper-form {
+        background-color: #a0cb84;
+        padding: 30px;
+        margin-top: -125px;
+        margin-bottom: -125px;
+    }
+
+    .wrapper-form h1 {
+        font-family: 'Fredericka the Great', cursive;
+        text-align: center;
+        font-size: 40px;
+        color: #FFF;
+        text-transform: uppercase;
+    }
+
+    .wrapper-form .form-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-row input {
+        font-family: 'Scheherazade New', serif;
+        font-size: 20px;
+    }
+
+
+    .form-row .input-name,
+    .form-row .input-email,
+    .form-row .select,
+    .form-row .input-tel {
+        border: transparent;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-row .select {
+        grid-area: "flag";
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .form-row .go {
+        grid-area: "button";
+        width: 5%;
+        border: 2px solid white;
+        padding: 10px;
+        align-content: center;
+        border-radius: 50%;
+        color: #FFF;
+        font-size: 20px;
+        margin: 0 150px;
+    }
+}
+
 @media all and (min-width: 1024px) {
+    .intro {
+        position: relative;
+        margin-top: 2.2%;
+        width: 100%;
+        height: 900px;
+    }
+    
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-inline: 5%;
+        justify-content: flex-end;
+    }
+    
+    .justify-end {
+        justify-content: flex-end;
+    }
+    
+    .justify-center {
+        justify-content: center;
+    }
+    
+    .static {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 97%;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .parallax {
+        width: 100%;
+        height: 120%;
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Video-image@2x.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    
+    .parallax::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background: linear-gradient(90deg, rgba(75, 73, 73, 0) 0%, rgba(3, 23, 44, 0.747) 100%);
+    }
+    
+    .title {
+        width: 45%;
+        position: absolute;
+        top: 25%;
+        font-family: 'Merriweather', serif;
+        font-size: 68px;
+        font-weight: 700;
+        line-height: 65px;
+        color: #FFF;
+        letter-spacing: 2px;
+        text-align: right;
+    }
+    
+    .statement {
+        position: absolute;
+        width: 45%;
+        top: 57.5%;
+        color: #FFF;
+        text-align: right;
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: 0.18px;
+        margin-top: 50px;
+        word-spacing: 2px;
+    }
+    
     .wrapper-intro {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "aside-1 content content aside-2";
@@ -717,8 +1030,7 @@ header {
     }
 
     .wrapper-form .form-row {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "name email phone button";
+        display: flex;
     }
 
     .form-row input {
@@ -727,97 +1039,38 @@ header {
         padding: 0 12px;
     }
 
-    .form-row .input-name {
-        grid-area: "name";
-    }
-
+    .form-row .input-name,
     .form-row .input-email {
-        grid-area: "email";
+        width: 30%;
+        margin-right: 30px;
     }
 
-    .form-row .number {
-        grid-area: "phone";
-        width: 25%;
-        border: 1px solid red;
+    .form-row .input-name,
+    .form-row .input-email,
+    .form-row .select,
+    .form-row .input-tel {
+        border: transparent;
+    }
+
+    .form-row .select {
+        grid-area: "flag";
+        margin-right: 0;
+        padding: 5px;
+    }
+
+    .form-row .input-tel {
+        width: 20%;
+        margin-right: 50px;
     }
 
     .form-row .go {
         grid-area: "button";
+        border: 2px solid white;
+        padding: 10px;
+        align-content: center;
+        border-radius: 50%;
+        color: #FFF;
+        font-size: 20px;
     }
 }
 
-.intro {
-    position: relative;
-    margin-top: 2.2%;
-    width: 100%;
-    height: 900px;
-}
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    padding-inline: 5%;
-    justify-content: flex-end;
-}
-
-.justify-end {
-    justify-content: flex-end;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.static {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 97%;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.parallax {
-    width: 100%;
-    height: 120%;
-    background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Video-image@2x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-
-.parallax::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120%;
-    background: linear-gradient(90deg, rgba(75, 73, 73, 0) 0%, rgba(3, 23, 44, 0.747) 100%);
-}
-
-.title {
-    width: 45%;
-    position: absolute;
-    top: 25%;
-    font-family: 'Merriweather', serif;
-    font-size: 68px;
-    font-weight: 700;
-    line-height: 65px;
-    color: #FFF;
-    letter-spacing: 2px;
-    text-align: right;
-}
-
-.statement {
-    position: absolute;
-    width: 45%;
-    top: 57.5%;
-    color: #FFF;
-    text-align: right;
-    font-size: 28px;
-    font-weight: 400;
-    letter-spacing: 0.18px;
-    margin-top: 50px;
-    word-spacing: 2px;
-}

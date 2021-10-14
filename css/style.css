@@ -526,7 +526,9 @@ header {
 
 
 /*******     Story     *******/
-.wrapper-intro {
+.wrapper-intro,
+.wrapper-story,
+.wrapper-form {
     display: grid;
 }
 
@@ -613,6 +615,135 @@ header {
         background-position: center;
         background-size: 2.25%;
     }
+
+    .separation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -9%;
+    }
+
+    .separation h4 {
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 28px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    .separation .line {
+        height: 80px;
+        width: 3px;
+        background-color:black;
+    }
+
+    .wrapper-story {
+        font-family: 'Scheherazade New', serif;
+    }
+    
+    .wrapper-story .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "col-1 col-2";
+        margin-bottom: 50px;
+    }
+
+    .col-1 {
+        grid-area: "col-1";
+        padding: 10px;
+    }
+
+    .col-2 {
+        grid-area: "col-2";
+    }
+
+    .col-1 .image,
+    .col-2 .image {
+        width: 100%;
+        align-content: center;
+    }
+
+    .col-1 .image img,
+    .col-2 .image img {
+        width: 105%;
+    }
+
+    .col-1 .image {
+        transform: translateX(10%);
+    }
+
+    .col-2 .image {
+        transform: translateX(-15%);
+    }
+
+    .row h1 {
+        font-size: 80px;
+        font-weight: bolder;
+        line-height: 75px;
+        letter-spacing: -1px;
+        font-stretch: extra-expanded;
+    }
+
+    .row p {
+        font-weight: 100;
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .row .col-2 h1,
+    .row .col-2 p {
+        padding: 0 65px 0 125px;
+    }
+
+    .row .col-1 h1,
+    .row .col-1 p {
+        padding: 0 125px 0 65px;
+    }
+
+    .wrapper-form {
+        background-color: #a0cb84;
+        margin: 0 10px;
+        padding: 30px;
+    }
+
+    .wrapper-form h1 {
+        font-family: 'Fredericka the Great', cursive;
+        text-align: center;
+        font-size: 40px;
+        color: #FFF;
+        text-transform: uppercase;
+    }
+
+    .wrapper-form .form-row {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "name email phone button";
+    }
+
+    .form-row input {
+        font-family: 'Scheherazade New', serif;
+        font-size: 20px;
+        padding: 0 12px;
+    }
+
+    .form-row .input-name {
+        grid-area: "name";
+    }
+
+    .form-row .input-email {
+        grid-area: "email";
+    }
+
+    .form-row .number {
+        grid-area: "phone";
+        width: 25%;
+        border: 1px solid red;
+    }
+
+    .form-row .go {
+        grid-area: "button";
+    }
 }
 
 .intro {
@@ -647,16 +778,12 @@ header {
 }
 
 .parallax {
-    /* position: absolute;
-    top: 0;
-    bottom: 0; */
     width: 100%;
     height: 120%;
     background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Video-image@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    /* filter: blur(10px); */
 }
 
 .parallax::after {
@@ -679,9 +806,7 @@ header {
     line-height: 65px;
     color: #FFF;
     letter-spacing: 2px;
-    /* margin-bottom: 200px; */
     text-align: right;
-    /* transform: translateY(-200%); */
 }
 
 .statement {

@@ -56,7 +56,7 @@ const scroll = () => {
     aside2.style.transform = `translateY(${scrollTop * 0.03 - 50}%)`
     image1.style.transform = `translateY(${scrollTop * -0.1 + 155}%)`
     image2.style.transform = `translateY(${scrollTop * -0.1 + 200}%)`
-    image3.style.transform = `translateY(${scrollTop * -0.1 + 275}%)`
+    image3.style.transform = `translateY(${scrollTop * -0.1 + 285}%)`
 }
 
 window.addEventListener('scroll', scroll)

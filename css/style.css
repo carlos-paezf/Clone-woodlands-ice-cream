@@ -483,7 +483,7 @@ header {
         height: 100%;
     }
 
-    .parallax {
+    .parallax .story{
         height: 115%;
         background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/Story-mob@2x.jpg);
     }
@@ -601,10 +601,19 @@ header {
         margin: 0 150px;
     }
 
+
+    /*******     Blog     *******/
+
+    .parallax.blog{
+        height: 115%;
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/blogs-mob@2x.jpg);
+    }
+
+
     /*******     Footer     *******/
 
     .gallery {
-        margin-top: -40%;
+        margin-top: -20%;
     }
 
     .gallery-logo {
@@ -1016,7 +1025,7 @@ header {
         height: 97%;
     }
     
-    .parallax {
+    .parallax.story {
         height: 120%;
         background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Video-image@2x.jpg);
     }
@@ -1154,6 +1163,61 @@ header {
     .form-row .go {
         grid-area: "button";
     }
+
+
+    /*******     Blog     *******/
+    
+    .parallax.blog {
+        height: 100%;
+        background-position-x: 20%;
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/Blog-header-banner@2x-1863x717.jpg);
+    }
+
+
+    /*******     Contact     *******/
+    
+    .parallax.contact {
+        height: 100%;
+        background-size: cover;
+        /* background-position-x: 20%; */
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/contact-headr-banner@2x-1863x718.jpg);
+    }
+
+    .title.contact {
+        top: 50%
+    }
+
+    .wrapper-map {
+        display: flex;
+        padding: 10px;
+    }
+
+    .row-map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "contact map";
+    }
+
+    .contact-details {
+        grid-area: "contact";
+        padding: 10px;
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/address-box.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px;
+    }
+
+    .contact-details h5 {
+        color: #FFF;
+        font-style: none;
+        font-size: 30px;
+        margin: 50px 0;
+    }
+
+    .map {
+        grid-area: "map";
+    }
+
 
     /*******     Footer     *******/
     .gallery {

@@ -1,151 +1,361 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- Link Font Awesome -->
-    <link rel="stylesheet" href="../assets/fontawesome-free-5.15.4-web/css/all.css">
+    <link
+      rel="stylesheet"
+      href="../assets/fontawesome-free-5.15.4-web/css/all.css"
+    />
     <!-- Link Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Menú</title>
-</head>
+    <!-- Parallax -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    />
 
-<body onresize="responsive()" onload="responsive()">
+    <title>Home - Woodlands of Erbistock Ice Cream</title>
+  </head>
 
+  <body onresize="responsive()" onload="responsive()">
     <header id="header">
-        <div class="container">
-            <div class="row">
-                <!-- PC Screen -->
-                <div class="menu" id="menu" hidden>
-                    <nav>
-                        <ul class="nav">
-                            <li class="link-menu">
-                                <a href="../index.html">H o m e</a>
-                            </li>
-                            <li class="link-menu active">
-                                <a href="./story.html">S t o r y</a>
-                            </li>
-                            <li class="link-menu">
-                                <a href="./flavours.html">F l a v o u r s</a>
-                            </li>
+      <div class="container">
+        <div class="row">
+          <!-- PC Screen -->
+          <div class="menu" id="menu" hidden>
+            <nav>
+              <ul class="nav">
+                <li class="link-menu">
+                  <a href="./menu.html">H o m e</a>
+                </li>
+                <li class="link-menu active">
+                  <a href="./story.html">S t o r y</a>
+                </li>
+                <li class="link-menu">
+                  <a href="./flavours.html">F l a v o u r s</a>
+                </li>
 
-                            <li class="link-menu">
-                                <div class="nav-logo" id="logo">
-                                    <a href="../index.html">
-                                        <div></div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="link-menu">
-                                <a href="./blog.html">B l o g</a>
-                            </li>
-                            <li class="link-menu">
-                                <a href="./wholesale.html">W h o l e s a l e</a>
-                            </li>
-                            <li class="link-menu">
-                                <a href="./contact.html">C o n t a c t</a>
-                            </li>
-                        </ul>
+                <li class="link-menu">
+                  <div class="nav-logo" id="logo">
+                    <a href="./menu.html">
+                      <div></div>
+                    </a>
+                  </div>
+                </li>
+                <li class="link-menu">
+                  <a href="./blog.html">B l o g</a>
+                </li>
+                <li class="link-menu">
+                  <a href="./wholesale.html">W h o l e s a l e</a>
+                </li>
+                <li class="link-menu">
+                  <a href="./contact.html">C o n t a c t</a>
+                </li>
+              </ul>
 
-                        <ul class="social-media">
-                            <li>
-                                <a href="https://www.instagram.com/woodlands_ice_cream/?hl=en" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/Woodlands-Ice-Cream-631261676975633/" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/woodlands__?lang=en" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+              <ul class="social-media">
+                <li>
+                  <a
+                    href="https://www.instagram.com/woodlands_ice_cream/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/Woodlands-Ice-Cream-631261676975633/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/woodlands__?lang=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-                <!-- Small-Medium Screen -->
-                <div class="menu-mobile" id="menu-mobile" hidden>
-                    <div class="nav-logo" id="logo">
-                        <a href="../index.html">
-                            <div></div>
-                        </a>
-                    </div>
-
-                    <div class="menu-toggle" id="toggle" onclick="toggleNav()"></div>
-
-                    <nav class="open" id="open-menu">
-                        <div class="mob-x" onclick="toggleNav()"></div>
-
-                        <div class="div">
-                            <ul class="nav">
-                                <li class="link-menu">
-                                    <a href="../index.html">H o m e</a>
-                                </li>
-                                <li class="link-menu">
-                                    <a href="./story.html">S t o r y</a>
-                                </li>
-                                <li class="link-menu">
-                                    <a href="./flavours.html">F l a v o u r s</a>
-                                </li>
-                                <li class="link-menu">
-                                    <a href="./blog.html">B l o g</a>
-                                </li>
-                                <li class="link-menu">
-                                    <a href="./wholesale.html">W h o l e s a l e</a>
-                                </li>
-                                <li class="link-menu">
-                                    <a href="./contact.html">C o n t a c t</a>
-                                </li>
-                            </ul>
-
-                            <ul class="social-media">
-                                <li>
-                                    <a href="https://www.instagram.com/woodlands_ice_cream/?hl=en" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/Woodlands-Ice-Cream-631261676975633/"
-                                        target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/woodlands__?lang=en" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <img class="image"
-                                src="https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/250years-footer.svg"
-                                alt="">
-                        </div>
-                    </nav>
-                </div>
+          <!-- Small-Medium Screen -->
+          <div class="menu-mobile" id="menu-mobile" hidden>
+            <div class="nav-logo" id="logo">
+              <a href="../index.html">
+                <div></div>
+              </a>
             </div>
+
+            <div class="menu-toggle" id="toggle" onclick="toggleNav()"></div>
+
+            <nav class="open" id="open-menu">
+              <div class="mob-x" onclick="toggleNav()"></div>
+
+              <div class="div">
+                <ul class="nav">
+                  <li class="link-menu">
+                    <a href="../index.html">H o m e</a>
+                  </li>
+                  <li class="link-menu">
+                    <a href="./story.html">S t o r y</a>
+                  </li>
+                  <li class="link-menu">
+                    <a href="./flavours.html">F l a v o u r s</a>
+                  </li>
+                  <li class="link-menu">
+                    <a href="./blog.html">B l o g</a>
+                  </li>
+                  <li class="link-menu">
+                    <a href="./wholesale.html">W h o l e s a l e</a>
+                  </li>
+                  <li class="link-menu">
+                    <a href="./contact.html">C o n t a c t</a>
+                  </li>
+                </ul>
+
+                <ul class="social-media">
+                  <li>
+                    <a
+                      href="https://www.instagram.com/woodlands_ice_cream/?hl=en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/Woodlands-Ice-Cream-631261676975633/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://twitter.com/woodlands__?lang=en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+
+                <img
+                  class="image"
+                  src="https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/250years-footer.svg"
+                  alt=""
+                />
+              </div>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
 
+    <section class="intro">
+      <div class="static">
+        <div class="parallax home"></div>
+      </div>
+      <div class="content justify-end">
+        <h1 class="title home">Woodlands</h1>
+        <br />
+        <h5 class="mini title home">of Erbistock Ice Cream</h5>
+        <p class="statement home">
+            Spoonfuls of luscious, smooth perfection, <br> lovingly crafted on our organic dairy farm in <br> North Wales
+        </p>
+      </div>
+
+      <div class="icecream-buttons">
+        <div class="single-button">
+          <img
+            src="https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Ourflavours-CTA.svg"
+            alt=""
+          />
+          <h3 class="ice-cream-buttons-text"> OUR FLAVOURS</h3>
+        </div>
+        <div class="single-button">
+            <img
+              src="https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Where-to-buy-CTA.svg"
+              alt=""
+            />
+            <h3 class="ice-cream-buttons-text"> WHERE TO BUY?</h3>
+          </div>
+    </section>
+
+    <section class="wrapper-intro">
+        <aside class="aside aside-1-home"></aside>
+        <div class="content justify-center col-2">
+          <h2>Delicious ice cream, made from our very <br> own organic milk</h2>
+          <p>
+            Twenty five years ago, we set out to create top-notch ice cream, using the organic milk made on our farm in <br> 
+            Erbistock, a little village hidden away amongst the gentle hills of North East Wales. We soon converted a little barn <br>
+             and from it, eagerly worked towards our goal; to make a family of ice creams that would be second to none in their <br>
+             taste and creamy texture.
+          </p>
+        </div>  
+        <aside class="aside aside-2-home"></aside>
+      </section>
+
+      <section class="container-home">
+
+        <img class="square-flavour" src="https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/25years.png">
+        <img class="square-flavour" src="https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Video-image@2x.jpg">
+        <img class="square-flavour" src="https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Ice-Cream-Tub-Mock-Up@2x.jpg">    
+
+        <img class="square-flavour" src="https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/Flavours-main-banner.jpg">
+        <img class="square-flavour" src="https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Owner-Rich@2x.jpg">
+        <img class="square-flavour" src="https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/Get-in-touch@2x.jpg">
+
+        <img class="square-flavour" src="https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/09/4-of-a-century-img@2x.jpg">
+        <img class="square-flavour" src="https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/banana-toated-pecan@2x-1024x616.jpg">
+
+    </section>
+
+    <section class="wrapper-intro">
+        <aside class="aside aside-1-home"></aside>
+        <div class="content justify-center col-2">
+          <p>
+            Twenty five years ago, we set out to create top-notch ice cream, using the organic milk made on our farm in <br> 
+            Erbistock, a little village hidden away amongst the gentle hills of North East Wales. We soon converted a little barn <br>
+             and from it, eagerly worked towards our goal; to make a family of ice creams that would be second to none in their <br>
+             taste and creamy texture.
+          </p>
+        </div>  
+      </section>
+
+    <section class="letter">
+      <h3>Join our mailing list</h3>
+      <p>Sing up for recipes, new flavours and latest news</p>
+      <form class="form-row">
+        <input
+          type="text"
+          class="col-10"
+          placeholder="Enter your email address"
+        />
+        <div class="col-2 button">
+          <h4>join</h4>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <ul class="social">
+        <li>
+          <a
+            href="https://www.instagram.com/woodlands_ice_cream/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/Woodlands-Ice-Cream-631261676975633/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/woodlands__?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+
+      <img
+        class="image"
+        src="https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/250years-footer.svg"
+        alt=""
+      />
+
+      <div class="footer-nav">
+        <div class="col-12">
+          <nav>
+            <ul class="nav">
+              <li class="link-menu">
+                <a href="../index.html">H o m e</a>
+              </li>
+              <li class="link-menu active">
+                <a href="./story.html">S t o r y</a>
+              </li>
+              <li class="link-menu">
+                <a href="./flavours.html">F l a v o u r s</a>
+              </li>
+              <li class="link-menu">
+                <a href="./blog.html">B l o g</a>
+              </li>
+              <li class="link-menu">
+                <a href="./wholesale.html">W h o l e s a l e</a>
+              </li>
+              <li class="link-menu">
+                <a href="./contact.html">C o n t a c t</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-info">
+        <img
+          class="certified"
+          src="https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/sts-logo.png"
+          alt=""
+        />
+        <p>
+          © 2021 Woodlands of Erbistock Ice Cream, Asney Park Farm, Erbistock,
+          Wrexham LL13 0DS Privacy Policy | Sitemap
+        </p>
+        <img
+          class="fury"
+          src="	https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/furybadge.svg"
+          alt=""
+        />
+      </div>
+    </footer>
+
     <script src="../js/index.js"></script>
-
-</body>
-
+  </body>
 </html>

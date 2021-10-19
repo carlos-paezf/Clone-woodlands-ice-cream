@@ -1000,10 +1000,129 @@ header {
         transform: translateX(-85%) translateY(-14.5%) scale(0.99);
     }
 
+    /*******     Home     *******/
+
+    .container-home
+{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px 10px;
+}
+
+.big-square
+{
+    width: 600px;
+    height: 800px;
+    background-color: blue;
+}
+
+.small-square
+{
+    width: 600px;
+    height: 400px;
+    background-color: red;
+}
+
+    .aside-1-home {
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/chocolate_tub@2x.png);
+        grid-area: "aside-1-flavours";
+    }
+    
+    .aside-2-home {
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/ice_cream_basket@2x.png);
+        grid-area: "aside-2-flavours";
+    }
+    
+    .aside-1-home,
+    .aside-2-home {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .aside-1-home,
+    .aside-2-home {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        background-size: 80%;
+    }
+
+    .aside-1-home {
+        bottom: -45%;
+    }
+    
+    .aside-2-home { 
+        bottom: -30%;
+        right: 0;
+    }
+
+    .icecream-buttons
+    {
+        width: 500px;
+        display: flex;
+        position: relative;
+        top: 80%;
+        left: 65%;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .ice-cream-buttons-text
+    {
+        position: absolute;
+        top: 80%;
+        left: -18%;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+    }
+
+    .single-button
+    {
+        position: relative;
+        top: -10px;
+        width: 100px;
+    }
+
+    .title.home {
+        width: 45%;
+        top: 40%;
+        right: 15%;
+        font-size: 68px;
+        font-weight: 600;
+        line-height: 65px;
+    }
+    
+    .mini.title.home {
+        width: 45%;
+        top: 47%;
+        right: 15%;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 65px;
+    }
+
+    .statement.home {
+        right: 15%;
+        width: 45%;
+        top: 60.5%;
+        font-size: 25px;
+    }
+
+    .parallax.home {
+        height: 120%;
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/main-banner-img-mobile-copy@2x.jpg);
+        background-repeat: no-repeat;
+    }
+
     /*******     Flavours     *******/
 
     .aside-1-flavours {
-        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/pisacchio-nut-bowl@2x.png);
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/Flavours-main-banner.jpg);
         grid-area: "aside-1-flavours";
     }
     
@@ -1042,6 +1161,7 @@ header {
         font-weight: 600;
         line-height: 65px;
     }
+    
 
     .statement.flavours {
         width: 45%;

@@ -1000,6 +1000,77 @@ header {
         transform: translateX(-85%) translateY(-14.5%) scale(0.99);
     }
 
+    /*******     Flavours     *******/
+
+    .aside-1-flavours {
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/pisacchio-nut-bowl@2x.png);
+        grid-area: "aside-1-flavours";
+    }
+    
+    .aside-2-flavours {
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/strawberrypetal.png);
+        grid-area: "aside-2-flavours";
+    }
+    
+    .aside-1-flavours,
+    .aside-2-flavours {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .aside-1-flavours,
+    .aside-2-flavours {
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        background-size: 80%;
+    }
+
+    .aside-1-flavours {
+        bottom: -60%;
+    }
+    
+    .aside-2-flavours { 
+        bottom: -30%;
+        right: 0;
+    }
+
+    .title.flavours {
+        width: 45%;
+        top: 25%;
+        font-size: 68px;
+        font-weight: 600;
+        line-height: 65px;
+    }
+
+    .statement.flavours {
+        width: 45%;
+        top: 57.5%;
+        font-size: 25px;
+    }
+
+    .parallax.flavours {
+        height: 120%;
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/Flavours-mob@2x.jpg);
+    }
+
+    .container-flavours
+{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 10px;
+}
+
+.square-flavour
+{
+    width: 600px;
+    height: 400px;
+    background-color: blue;
+}
+
     /*******     Story     *******/
     .intro {
         margin-top: 2.2%;
@@ -1421,51 +1492,4 @@ header {
         position: relative;
         right: -10px;
     }
-}
-
-
-/******     Flavours     ******/
-.flavour-body
-{
-    margin-top: 150px;
-}
-
-.main-flavours
-{
-    height: 920px;
-    width: auto;
-    background-image: url('https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/Flavours-mob@2x.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: cover;
-    filter: blur(0px);
-}
-
-.main-flavours-text-container
-{
-    color: white;
-    position: absolute;
-    right: 300px;
-    bottom: 100px;
-}
-
-.main-flavour-title
-{
-    font-size: 68px;
-    font-weight: 600;
-    line-height: 65px;
-    text-align: right;
-    font-family: "Jubilat";
-}
-
-.main-flavours-text{
-        
-    text-align: right;
-        color: #FFF;
-        font-size: 25px;
-        font-weight: 300;
-        letter-spacing: 0.18px;
-        margin-bottom: 30px;
 }

@@ -1055,7 +1055,7 @@ header {
     }
     
     .aside-2-home { 
-        bottom: -30%;
+        bottom: -28%;
         right: 0;
     }
 
@@ -1121,7 +1121,7 @@ header {
     /*******     Flavours     *******/
 
     .aside-1-flavours {
-        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/Flavours-main-banner.jpg);
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/pisacchio-nut-bowl@2x.png);
         grid-area: "aside-1-flavours";
     }
     

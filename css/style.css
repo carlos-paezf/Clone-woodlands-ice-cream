@@ -1055,7 +1055,7 @@ header {
     }
     
     .aside-2-home { 
-        bottom: -30%;
+        bottom: -28%;
         right: 0;
     }
 
@@ -1118,10 +1118,43 @@ header {
         background-repeat: no-repeat;
     }
 
+    /*******     Wholesale     *******/
+
+
+    .wrapper-intro-wholesale p {
+        color: #E68CB9;
+        font-size: 34px;
+        font-weight: 100;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .title.wholesale {
+        width: 45%;
+        top: 45%;
+        right: 20%;
+        font-size: 68px;
+        font-weight: 600;
+        line-height: 65px;
+    }
+    
+
+    .statement.wholesale {
+        width: 45%;
+        top: 70%;
+        right: 20%;
+        font-size: 25px;
+    }
+
+    .parallax.wholesale {
+        height: 120%;
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/11/wholesale-mob@2x.jpg);
+    }
+
     /*******     Flavours     *******/
 
     .aside-1-flavours {
-        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/Flavours-main-banner.jpg);
+        background-image: url(https://woodlands-ice-cream.co.uk/wp-content/uploads/2018/10/pisacchio-nut-bowl@2x.png);
         grid-area: "aside-1-flavours";
     }
     
@@ -1337,6 +1370,8 @@ header {
     .form-row .input-email {
         width: 30%;
         margin-right: 30px;
+        display: flex;
+        justify-content: center;
     }
 
     .form-row .select {

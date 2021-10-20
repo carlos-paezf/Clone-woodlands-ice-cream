@@ -2,6 +2,17 @@
 
 /*******     Menú     *******/
 
+
+.single-button img {
+    width: 75px;
+    transition: transform .5s;
+}
+
+.single-button img:hover {
+    transform: rotate(360deg);
+    transition: transform .5s;
+}
+
 body {
     background-image: url(https://woodlands-ice-cream.co.uk/wp-content/themes/woodlands/img/wooden_panels.jpg);
     background-size: 100%;

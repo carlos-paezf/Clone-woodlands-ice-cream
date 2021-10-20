@@ -1010,7 +1010,6 @@ header {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    gap: 10px 10px;
 }
 
 .big-square
